@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles of Interest (VOI)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Home Screen -->
+    <div id="home-screen" class="screen">
+        <header>
+            <h1>Vehicles of Interest</h1>
+            <input type="text" placeholder="Search...">
+        </header>
+        <section>
+            <h2>Alerts</h2>
+            <div class="alert">
+                <p>Silver Alert</p>
+                <p>445 vehicles</p>
+            </div>
+            <div class="alert">
+                <p>Ambert Alert</p>
+                <p>351 Videos</p>
+            </div>
+            <div class="alert">
+                <p>Arrest Warrant</p>
+                <p>361 documents</p>
+            </div>
+        </section>
+        <footer>
+            <button onclick="showScreen('home-screen')">Home</button>
+            <button onclick="showScreen('vehicle-list')">Vehicles</button>
+            <button onclick="showScreen('reasons-for-interest')">Reasons for Interest</button>
+        </footer>
+    </div>
+
+    <!-- Vehicle List Screen -->
+    <div id="vehicle-list" class="screen">
+        <header>
+            <h1>Vehicle List</h1>
+            <input type="text" placeholder="Search...">
+            <button>Filter</button>
+        </header>
+        <section>
+            <div class="vehicle">
+                <p>License Plate: MD1234</p>
+                <p>Make: Toyota</p>
+                <p>Model: Camry</p>
+                <button onclick="showScreen('vehicle-details')">Details</button>
+            </div>
+            <div class="vehicle">
+                <p>License Plate: VA5678</p>
+                <p>Make: Honda</p>
+                <p>Model: Civic</p>
+                <button onclick="showScreen('vehicle-details')">Details</button>
+            </div>
+            <div class="vehicle">
+                <p>License Plate: NY9101</p>
+                <p>Make: Ford</p>
+                <p>Model: Escape</p>
+                <button onclick="showScreen('vehicle-details')">Details</button>
+            </div>
+        </section>
+        <footer>
+            <button onclick="showScreen('home-screen')">Home</button>
+            <button onclick="showScreen('vehicle-list')">Vehicles</button>
+            <button onclick="showScreen('reasons-for-interest')">Reasons for Interest</button>
+        </footer>
+    </div>
+
+    <!-- Vehicle Details Screen -->
+    <div id="vehicle-details" class="screen">
+        <header>
+            <h1>Vehicle Details</h1>
+            <button onclick="showScreen('vehicle-list')">Back</button>
+        </header>
+        <section>
+            <div class="vehicle-info">
+                <p>License Plate: MD1234</p>
+                <p>Make: Toyota</p>
+                <p>Model: Camry</p>
+                <p>Year: 2018</p>
+                <p>Color: Red</p>
+                <p>Alert Type: Amber Alert</p>
+            </div>
+            <div class="owner-info">
+                <p>Owner Name: John Doe</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+        </section>
+        <footer>
+            <button onclick="showScreen('home-screen')">Home</button>
+            <button onclick="showScreen('vehicle-list')">Vehicles</button>
+            <button onclick="showScreen('reasons-for-interest')">Reasons for Interest</button>
+        </footer>
+    </div>
+
+    <!-- Reasons for Interest Screen -->
+    <div id="reasons-for-interest" class="screen">
+        <header>
+            <h1>Reasons for Interest</h1>
+            <input type="text" placeholder="Search...">
+        </header>
+        <section>
+            <div class="reason">
+                <p>Reason: Silver Alert</p>
+                <p>Description: Missing elder</p>
+            </div>
+            <div class="reason">
+                <p>Reason: Amber Alert</p>
+                <p>Description: Missing child</p>
+            </div>
+            <div class="reason">
+                <p>Reason: Stolen</p>
+                <p>Description: Stolen vehicle</p>
+            </div>
+            <div class="reason">
+                <p>Reason: Arrest Warrant</p>
+                <p>Description: Active arrest warrant</p>
+            </div>
+        </section>
+        <footer>
+            <button onclick="showScreen('home-screen')">Home</button>
+            <button onclick="showScreen('vehicle-list')">Vehicles</button>
+            <button onclick="showScreen('reasons-for-interest')">Reasons for Interest</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
