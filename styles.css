@@ -2,7 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    /*background-image: url('background.jpg');  Replace with your background image */
+    
 }
 
 .screen {
@@ -17,15 +18,21 @@ body {
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+
+
 }
 
 header h1 {
     margin: 0;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 header input {
@@ -76,7 +83,10 @@ footer {
     justify-content: space-around;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 260px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 footer button {
@@ -85,4 +95,86 @@ footer button {
     color: white;
     cursor: pointer;
     font-size: 10px;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.landing-container {
+    background-image: url('background.jpg'); /* Replace with your background image */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size:1em;
+    margin: 0;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    width: 200px;
+    height: 400px;
+    align-content: center;
+}
+
+form h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form h3 {
+    font-size: 12px;
+    text-align: left;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100px;
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form p {
+    margin-top: 20px;
+}
+
+form p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form p a:hover {
+    text-decoration: underline;
 }

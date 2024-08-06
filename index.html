@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
     <!-- Home Screen -->
     <div id="home-screen" class="screen">
         <header>
@@ -29,7 +30,7 @@
             </div>
         </section>
         <footer>
-            <button onclick="showScreen('home-screen')">Home</button>
+            <button onclick="location.href = 'landing.html';">  Home  </button>
             <button onclick="showScreen('vehicle-list')">Vehicles</button>
             <button onclick="showScreen('reasons-for-interest')">Reasons for Interest</button>
         </footer>
@@ -39,7 +40,7 @@
     <div id="vehicle-list" class="screen">
         <header>
             <h1>Vehicle List</h1>
-            <input type="text" placeholder="Search...">
+            <!-- <input type="text" placeholder="Search..."> -->
             <button>Filter</button>
         </header>
         <section>
@@ -128,5 +129,6 @@
     </div>
 
     <script src="script.js"></script>
+  
 </body>
 </html>
